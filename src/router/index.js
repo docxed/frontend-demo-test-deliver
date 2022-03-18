@@ -7,7 +7,6 @@ import Profile from "@/pages/profile.vue"
 import Findbeds from "@/pages/findbeds.vue"
 import Buybeds from "@/pages/buybeds.vue"
 import Beds from "@/pages/beds.vue"
-import Bedsdetail from "@/pages/bedsdetail.vue"
 
 const routes = [
   {
@@ -49,11 +48,6 @@ const routes = [
     path: "/beds",
     name: "beds",
     component: Beds,
-  },
-  {
-    path: "/bedsdetail/:id",
-    name: "bedsdetail",
-    component: Bedsdetail,
   },
 ]
 
