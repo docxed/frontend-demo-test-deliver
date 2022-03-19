@@ -14,6 +14,7 @@ describe("ทดสอบการทำงานของการเลือ�
     cy.url().should("include", "/")
     cy.wait(5000)
     cy.get(":nth-child(1) > a > .btn").click()
+    cy.wait(6000)
     cy.url().should("include", "/findbeds")
     cy.get(":nth-child(3) > .btn").click()
     cy.get(":nth-child(2) > p.text-center > a > .btn").click({ force: true })
