@@ -3,14 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start-server": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "prettier --write .",
     "cypress:open": "cypress open",
     "unit": "vue-cli-service test:unit",
-    "test:component": "cypress open --project ./tests/component/",
-    "component": "start-server-and-test start-server http://localhost:8080 test:component",
     "e2e": "vue-cli-service test:e2e",
     "test": "jest",
     "unit:coverage": "jest --coverage",
@@ -46,6 +43,6 @@
     "flush-promises": "^1.0.2",
     "jest": "^27.0.5",
     "prettier": "2.6.0",
-    "start-server-and-test": "^1.14.0"
+    "xvfb": "^0.4.0"
   }
 }
