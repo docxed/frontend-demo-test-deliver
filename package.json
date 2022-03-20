@@ -8,7 +8,8 @@
     "lint": "prettier --write .",
     "cypress:open": "cypress open",
     "unit": "vue-cli-service test:unit",
-    "e2e": "vue-cli-service test:e2e --headless --spec tests/e2e/specs/component_Test.spec.js",
+    "component": "vue-cli-service test:e2e --headless --spec tests/e2e/specs/component_Test.spec.js",
+    "e2e": "vue-cli-service test:e2e --headless",
     "test": "jest",
     "unit:coverage": "jest --coverage",
     "unit:watch": "jest --watch"
