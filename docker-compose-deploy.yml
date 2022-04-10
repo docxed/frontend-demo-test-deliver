@@ -4,5 +4,5 @@ services:
     image: docxed/frontend
     build: ./frontend-demo-test
   backend:
-    image: docxed/backend
+    image: test/backend
     build: ./backend-demo-test
