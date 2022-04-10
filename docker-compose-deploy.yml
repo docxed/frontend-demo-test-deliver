@@ -4,9 +4,9 @@ services:
     image: docxed/frontend-delivery:1.0.0
     build: ./frontend-demo-test
     ports:
-      - "8080:8080"
+      - "8089:8080"
   backend:
     image: docxed/backend-delivery:1.0.0
     build: ./backend-demo-test
     ports:
-      - "3000:8888"
+      - "3009:8888"
