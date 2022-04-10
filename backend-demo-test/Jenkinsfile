@@ -83,5 +83,13 @@ pipeline {
                 }
             }
         }
+        stage('Deploy') {
+            steps {
+                dir('backend-demo-test') {
+                    def versions = readFile(file: 'versionlog.txt')
+                    echo versions
+                }
+            }
+        }
     }
 }
