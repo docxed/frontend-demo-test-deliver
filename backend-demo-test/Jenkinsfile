@@ -86,6 +86,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 dir('backend-demo-test') {
+                    sh 'npm version patch > versionlog.txt'
                     def versions = readFile(file: 'versionlog.txt')
                     echo versions
                 }
