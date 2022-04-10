@@ -1,8 +1,12 @@
 version: "3" 
 services:
   frontend:
-    image: docxed/frontend-delivery
+    image: docxed/frontend-delivery:1.0.0
     build: ./frontend-demo-test
+    ports:
+      - "8080:8080"
   backend:
-    image: docxed/backend-delivery:{$TAG}
+    image: docxed/backend-delivery:1.0.0
     build: ./backend-demo-test
+    ports:
+      - "3000:3000"
