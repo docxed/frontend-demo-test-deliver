@@ -9,4 +9,4 @@ services:
     image: docxed/backend-delivery:1.0.0
     build: ./backend-demo-test
     ports:
-      - "3000:3000"
+      - "3000:8888"
