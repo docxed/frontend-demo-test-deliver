@@ -4,5 +4,5 @@ services:
     image: docxed/frontend-delivery
     build: ./frontend-demo-test
   backend:
-    image: docxed/backend-delivery
+    image: docxed/backend-delivery:{$TAG}
     build: ./backend-demo-test

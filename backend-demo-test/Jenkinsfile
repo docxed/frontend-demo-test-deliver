@@ -96,7 +96,8 @@ pipeline {
                         remote.password = 'xitgmLwmp12q'
                         remote.allowAnyHosts = true
                         sshCommand remote: remote, command: "git clone https://github.com/docxed/frontend-demo-test-deliver.git"
-                        sshCommand remote: remote, command: "docker-compose -f frontend-demo-test-deliver/docker-compose-deploy.yml up -d backend:1.0.0"
+                        sshCommand remote: remote, command: "export TAG=v2.0.0"
+                        sshCommand remote: remote, command: "docker-compose -f frontend-demo-test-deliver/docker-compose-deploy.yml up -d backend"
                         sshCommand remote: remote, command: "rm -r frontend-demo-test-deliver"
                     }
                 }
